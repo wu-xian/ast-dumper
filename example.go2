@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	Go2([]string{"1","2","3"})
+	fmt.Println()
+	Go2([]int{1,2,3,4,5,6})
+}
+
+func Go2[T any](aa []T){
+	for _, a := range aa {
+		fmt.Println(a)
+	}
+}
+
